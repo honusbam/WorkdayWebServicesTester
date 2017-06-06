@@ -8,7 +8,7 @@ namespace WWS_tester
         static void Main(string[] args)
         {
             Human_ResourcesPortClient hr = new Human_ResourcesPortClient();
-            hr.Endpoint.Address = new EndpointAddress("https://wd2-impl-services1.workday.com/ccx/service/{TENANT_NAME_HERE}/Human_Resources/v28.1");
+            hr.Endpoint.Address = new EndpointAddress("https://wd2-impl-services1.workday.com/ccx/service/{TENANT_NAME_HERE}/Human_Resources/v28.1");//not necessary to set endpoint if your configuration is correct
 
             //Specify the username and password for WS-Security UsernameToken Header
             hr.ClientCredentials.UserName.UserName = "lmcneil@{TENANT_NAME_HERE}";   //put a working username with credentials here.  include the @tenant, replace {TENANT_NAME_HERE} with tenant, no curly brackets
